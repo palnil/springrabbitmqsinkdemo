@@ -7,11 +7,12 @@ import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
-public class PersonListner  {
+public class PersonListner {
 
 
     @StreamListener(PersonSink.SINGLE_MESSAGE)
     public void listenAndLog(@Payload Data payload) {
+
         log.info(payload.toString());
     }
 }

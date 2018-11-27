@@ -19,7 +19,4 @@ public class Application {
     }
 
 
-    private PersonSink sink;
-
-
 }
